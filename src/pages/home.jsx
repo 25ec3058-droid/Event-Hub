@@ -1,10 +1,3 @@
-function Home() {
-  return (
-    <div>
-      <h1>Discover Events 🎉</h1>
-      <p>Tech conferences, music festivals and more.</p>
-    </div>
-  );
+export default function Home() {
+  return <h1>Home Page</h1>;
 }
-
-export default Home;
