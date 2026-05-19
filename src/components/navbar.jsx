@@ -1,30 +1,27 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export default function Navbar() {
-  const location = useLocation();
-
-  const style = (path) => ({
-    color: location.pathname === path ? "#60a5fa" : "white",
-    textDecoration: "none",
-    fontWeight: "bold"
-  });
-
+function Navbar() {
   return (
-    <nav style={{
-      display: "flex",
-      justifyContent: "space-between",
-      padding: "20px 40px",
-      background: "#111827",
-      color: "white"
-    }}>
-      <h2>EventHub</h2>
+    <nav style={{ padding: "15px", background: "#111", color: "white" }}>
+      <h2 style={{ display: "inline", marginRight: "20px" }}>EventHub</h2>
 
-      <div style={{ display: "flex", gap: "20px" }}>
-        <Link to="/" style={style("/")}>Home</Link>
-        <Link to="/events" style={style("/events")}>Events</Link>
-        <Link to="/calendar" style={style("/calendar")}>Calendar</Link>
-        <Link to="/contact" style={style("/contact")}>Contact</Link>
-      </div>
+      <Link to="/" style={{ margin: "10px", color: "white" }}>
+        Home
+      </Link>
+
+      <Link to="/events" style={{ margin: "10px", color: "white" }}>
+        Events
+      </Link>
+
+      <Link to="/calendar" style={{ margin: "10px", color: "white" }}>
+        Calendar
+      </Link>
+
+      <Link to="/contact" style={{ margin: "10px", color: "white" }}>
+        Contact
+      </Link>
     </nav>
   );
 }
+
+export default Navbar;

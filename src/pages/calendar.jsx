@@ -1,10 +1,10 @@
-import Navbar from "../components/Navbar";
-
-export default function Calendar() {
+function Calendar() {
   return (
     <div>
-      <Navbar />
-      <h1 style={{ padding: "40px" }}>Calendar Page</h1>
+      <h1>Calendar 📅</h1>
+      <p>Check upcoming event dates here.</p>
     </div>
   );
 }
+
+export default Calendar;

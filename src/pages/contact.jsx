@@ -1,10 +1,10 @@
-import Navbar from "../components/Navbar";
-
-export default function Contact() {
+function Contact() {
   return (
     <div>
-      <Navbar />
-      <h1 style={{ padding: "40px" }}>Contact Page</h1>
+      <h1>Contact Us 📞</h1>
+      <p>Email: support@eventhub.com</p>
     </div>
   );
 }
+
+export default Contact;
