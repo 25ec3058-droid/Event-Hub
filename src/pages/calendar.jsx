@@ -2,7 +2,7 @@ function Calendar() {
   return (
     <div>
       <h1>Calendar 📅</h1>
-      <p>Check upcoming event dates here.</p>
+      <p>Check event dates and schedules.</p>
     </div>
   );
 }
